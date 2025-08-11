@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>QUIZ</h1>
+      <form id="quizForm">
+
+    <div>
+    <h3>Question 1:</h3>
+    <p class="question-title">1. What is the name of Luffy’s Devil Fruit?</p>
+      <label><input type="radio" name="q1" value="wrong"> Mera Mera no Mi</label><br/>
+      <label><input type="radio" name="q1" value="correct"> Gomu Gomu no Mi</label><br/>
+      <label><input type="radio" name="q1" value="wrong"> Yami Yami no Mi</label><br/>
+      <label><input type="radio" name="q1" value="wrong"> Suna Suna no Mi</label>
+ 
+    </div>
+     <div class="question 2:">
+      <p class="question-title">2. Who is Monkey D. Luffy’s grandfather?</p>
+      <label><input type="radio" name="q2" value="wrong"> Sengoku</label><br/>
+      <label><input type="radio" name="q2" value="wrong"> Whitebeard</label><br/>
+      <label><input type="radio" name="q2" value="correct"> Monkey D. Garp</label><br/>
+      <label><input type="radio" name="q2" value="wrong"> Shanks</label>
+    </div>
+
+    <div class="question 3:">
+      <p class="question-title">3. What is Luffy’s ultimate goal?</p>
+      <label><input type="radio" name="q3" value="wrong"> Become the strongest swordsman</label><br/>
+      <label><input type="radio" name="q3" value="correct"> Become the Pirate King</label><br/>
+      <label><input type="radio" name="q3" value="wrong"> Find his father</label><br/>
+      <label><input type="radio" name="q3" value="wrong"> Destroy the World Government</label>
+    </div>
+     <button type="button" onclick="checkAnswers()">Submit</button>
+    <p id="result" style="font-weight: bold; margin-top: 20px;"></p>
+  </form>
+</div>
+</body>
+</html>

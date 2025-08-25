@@ -1,0 +1,82 @@
+* {
+     font-family: Arial, sans-serif;       /* universal selector */
+    background-color: #F5F0E6;
+    color: #0a730f;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;    
+}
+
+.wrapper {
+    display: contents;              /* class selector */
+    justify-content: center; 
+    text-align: center;
+    align-items: center;   
+    align-content: center;  
+    height: 100vh;   
+           
+}
+
+table {
+    margin: auto; 
+    text-align: center;  
+    border: 10px solid #333;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px #0000001a;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {          
+    background-color: #45a049;         /* background-color*/
+}
+
+
+#mainHeading {                      /*ID Selector*/
+    text-align: center;
+    font-size: 32px;
+}
+
+h2, h3 {                         /*Group Selector*/
+    text-align: center;
+    color: black;
+
+}

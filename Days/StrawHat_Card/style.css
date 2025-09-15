@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;                /* make body a flex container */
+    justify-content: center;      /* center container horizontally */
+    align-items: center;          /* center container vertically */
+    min-height: 100vh;            /* full height viewport */
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;              /* allow cards to wrap on small screens */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;                    /* spacing between cards */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;       /* stack content vertically */
+    align-items: center;
+    padding: 20px;
+    width: 280px;                 /* fixed card width */
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* soft shadow for card look */
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);  /* small hover effect */
+}
+
+.container img {
+    border-radius: 8px;
+    /* max-width: 100%;              responsive image */
+    /* height: auto;   */
+     width: 100%;            /* fill the card’s width */
+    height: 400px;          /* fixed height */
+    object-fit: cover; 
+    margin-bottom: 10px;
+    size-adjust: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+   cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+
+}
+
+.container {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c2e9d59-ee54-490e-bf96-5497f587844f/dggnzi8-eb711edf-184f-40b7-ac27-583b74c3eb8e.jpg/v1/fill/w_1192,h_670,q_70,strp/luffy_gear_5__4k__wallpaper_by_cyberxyt_dggnzi8-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mLzljMmU5ZDU5LWVlNTQtNDkwZS1iZjk2LTU0OTdmNTg3ODQ0Zi9kZ2duemk4LWViNzExZWRmLTE4NGYtNDBiNy1hYzI3LTU4M2I3NGMzZWI4ZS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.OexBNQQDLx79yvRwruIaDFu076z-50woACrg8FIzJRQ");
+    background-size: cover;      /* fill box while keeping aspect ratio */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat; /* prevent tiling */
+}
+
+footer{ 
+    max-width:1100px; 
+    margin:18px auto 0; 
+    color:var(--muted); 
+    font-size:13px; 
+    padding:0 6px; }

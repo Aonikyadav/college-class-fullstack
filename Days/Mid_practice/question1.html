@@ -1,0 +1,99 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <title>form_basic</title>
+    <style>
+      
+      #box {
+      display:flex;
+      justify-content:center;
+      text-align: center;
+      border: 5px solid black;
+      border-radius:20px;
+      margin:50px ;
+      background-color:green;
+      font-weight:bold;
+      color:black;
+      }
+      
+      #inner {
+/*   display:flex; */
+      position:static;
+      justify-items:center;
+      justify-content:center;
+      border: 5px solid black;
+      border-radius:20px;
+      margin:50px ;
+      padding:20px  20px;
+      background-color:blue;
+      color:white
+      }
+      
+       #box:hover {
+      background-color:green;
+      border:5px dashed white;
+       transform: scale(1.1);
+      }
+      
+      #inner:hover {
+      background-color:green;
+      border:5px dashed white;
+      transform: scale(1.2);
+      }
+      
+      #info {
+      font-size:40px
+      }
+      
+      label {
+      text-align:center;
+      margin:5px;
+      padding:0px 20px;
+      border:5px solid black;
+      border-radius:10px;
+      }
+      
+      input {
+      margin:10px;
+      border:5px solid black;
+      border-radius:10px;
+      }
+      
+      button {
+      color:black;
+      background-color:white;
+      margin:20px;
+      padding:10px;
+      border:5px solid black;
+      border-radius:10px;
+      transition: transform 0.5s ease;
+      }
+      
+      button:hover {
+      color:white;
+      background-color:green;
+      padding:10px;
+      transform: translateY(-10px);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <form id="box">
+      <div id="inner"> 
+        <div id="info">Collage Portal</div>
+        <br>
+          
+    <label for="username">Name</label>
+      <input type="text" id="username" name="username" placeholder="name"> <br>
+    <label for="useremail">Email</label>
+      <input type="text" id="useremail" name="userEmail" placeholder="email"> <br>
+        <label for="useremail">Password</label>
+      <input type="password" id="useremail" name="userEmail" placeholder="password"> <br>
+        <button>Submit</button>
+        </div>
+          </form>
+  
+  
+  </body>
+</>

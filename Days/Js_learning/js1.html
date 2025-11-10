@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // for loop 
+
+        let students = [
+            {
+                name: "Rohit", 
+                age: 25,
+                marks: {
+                    math: 85,
+                    science: 90,
+                    english: 88
+                }
+            },
+            {
+                name: "Anmoal",
+                age: 28,
+                marks: {
+                    math: 78,
+                    science: 82,
+                    english: 80
+                }
+            },
+            {
+                name: "Rajesh",
+                age: 15,
+                marks: {
+                    math: 92,
+                    science: 88,
+                    english: 91
+                }
+            },
+            {
+                name: "Neha",
+                age: 16,
+                marks: {
+                    math: 80,
+                    science: 85,
+                    english: 87
+                }
+            }
+
+        ];
+
+        // for loop
+        for(key in students){
+            document.write("Student Name: " + students[key].name + "<br>");
+            document.write("Age: " + students[key].age + "<br>");
+            document.write("Marks: " + "<br>");
+            document.write("Math: " + students[key].marks.math + "<br>");
+            document.write("Science: " + students[key].marks.science + "<br>");
+            document.write("English: " + students[key].marks.english + "<br><br>");
+        }
+
+        // for of loop
+        for(student of students){
+            document.write("Student Name: " + student.name + "<br>");
+            document.write("Age: " + student.age + "<br>");
+            document.write("Marks: " + "<br>");
+            document.write("Math: " + student.marks.math + "<br>");
+            document.write("Science: " + student.marks.science + "<br>");
+            document.write("English: " + student.marks.english + "<br><br>");
+        }
+        
+    </script>
+    
+</body>
+</html>

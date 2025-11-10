@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    display: flex;                /* make body a flex container */
+    justify-content: center;      /* center container horizontally */
+    align-items: center;          /* center container vertically */
+    min-height: 100vh;            /* full height viewport */
+    background-color: white;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;       /* stack content vertically */
+    align-items: center;
+    padding: 20px;
+    width: 280px;                 /* fixed card width */
+    border-radius: 10px;
+    border: 2px solid black;
+    color: black;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px black ; /* soft shadow for card look */
+    transition: transform 0.3s ease;
+}
+
+.container img {
+    border-radius: 8px;
+     width: 100%;            /* fill the card’s width */
+    height: 400px;          /* fixed height */
+    object-fit: cover;
+    margin-bottom: 10px;
+    size-adjust: 100%;
+}
+
+.box img:hover {
+    transition: transform 0.9s ease;
+    transform: scale(1.15);
+}
+
+.container:hover {
+    transition: transform 0.8s ease;
+    transform: scale(1.1);
+}
+

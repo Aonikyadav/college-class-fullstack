@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Table (Internal CSS)</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f3cccc;
+        }
+        tr:hover {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr><td>101</td><td>Aarav</td><td>Math</td><td>85</td></tr>
+        <tr><td>102</td><td>Neha</td><td>Science</td><td>90</td></tr>
+        <tr><td>103</td><td>Rohan</td><td>English</td><td>78</td></tr>
+        <tr><td>104</td><td>Priya</td><td>History</td><td>88</td></tr>
+        <tr><td>105</td><td>Kabir</td><td>Geography</td><td>92</td></tr>
+    </table>
+</body>
+</html>
